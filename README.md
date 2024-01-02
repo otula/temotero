@@ -6,8 +6,8 @@ Contents of this repository
 ai-sw-hackhathon-2023
  - Publicly available works/presentations from the AI-SW-Hackhathon event
  - Check the original group repositories available at:
-  - [catbot-challenge-b](https://github.com/abar654/ai-hack-news)
-  - [plantagen-challenge-d](https://github.com/vnuotio/comp_se_110_hackathon)
+ -- [catbot-challenge-b](https://github.com/abar654/ai-hack-news)
+ -- [plantagen-challenge-d](https://github.com/vnuotio/comp_se_110_hackathon)
 
 
 License
