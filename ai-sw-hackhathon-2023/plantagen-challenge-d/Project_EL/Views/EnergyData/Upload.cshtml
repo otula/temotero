@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Upload Your Energy Data";
+}
+
+<h2 style="text-align: center; color: #333; margin-bottom: 20px;">@ViewBag.Title</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div style="background-color: #ffdddd; border-left: 6px solid #f44336; margin-bottom: 15px; padding: 10px;">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<form asp-action="UploadCSV" asp-controller="EnergyData" method="post" enctype="multipart/form-data" style="max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,.1);">
+    <div class="form-group" style="margin-bottom: 15px;">
+        <label for="fileUpload" style="display: block; margin-bottom: 5px;">Select CSV File:</label>
+        <input type="file" id="fileUpload" name="file" accept=".csv" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" />
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%; background-color: #4CAF50; color: white; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer;">Upload</button>
+</form>

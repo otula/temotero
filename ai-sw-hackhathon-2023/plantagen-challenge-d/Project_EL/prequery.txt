@@ -1,0 +1,8 @@
+Some basic information:
+Time format 24h
+Currency in (euros, cents): (€, c)
+Fixed electricity transfer price: 3c/kWh (7-22 o'clock) and 2c/kWh (22-07 o'clock)
+Maximum electrical power draw: 18kWh
+
+The following data is in CSV form: date;time;total power draw;outside temperature;spot price(c/kWh)
+Please wait for the data and follow-up questions.

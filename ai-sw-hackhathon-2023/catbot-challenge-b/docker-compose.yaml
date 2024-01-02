@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  backend:
+    container_name: backend_container
+    image: backend_image
+    build: ./ai-news-backend
+    expose:
+      - "5000"
+    networks: 
+      - app_network
+
+  frontend:
+    container_name: frontend_container
+    image: frontend_image
+    build: ./ai-news-frontend
+    ports:
+      - "80:3000"
+    networks: 
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

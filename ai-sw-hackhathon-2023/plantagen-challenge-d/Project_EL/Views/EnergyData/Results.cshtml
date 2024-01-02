@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Project_EL.Models.EnergyDatapointModel>
+
+@{
+    ViewBag.Title = "Upload Results";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Energy Total (kWh)</th>
+                <th>Temperature (°C)</th>
+                <th>Price (Spot)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var record in Model)
+            {
+                <tr>
+                    <td>@record.Timestamp</td>
+                    <td>@record.TotalEnergyConsumed</td>
+                    <td>@record.TemperatureCelcius</td>
+                    <td>@record.SpotPrice</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data to display.</p>
+}

@@ -1,0 +1,3 @@
+How well did I use electricity?
+A good result means I used a lot of electricity when price was low, and less electricity when the price was high.
+Please also give specific examples of good/bad use cases from the data.
