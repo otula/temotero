@@ -1,0 +1,21 @@
+{
+  "confirmationEmailAddress": "string",
+  "contactPerson": "string",
+  "contactPersonEmail": "string",
+  "customer": "string",
+  "deliveryAddress": "string",
+  "deliveryDate": "preserve format, string",
+  "items": [
+    {
+      "deliveryDate": "string",
+      "position": "line or row number, null if not especially mentioned, string",
+      "pricePerOne": "only amount, preserve format, string",
+      "productCode": "string",
+      "quantity": "only amount, preserve format, string",
+      "quantityUnit": "string",
+      "sum": "only amount, preserve format, string"
+    }
+  ],
+  "orderDate": "preserve format, string",
+  "orderNumber": "string"
+}
