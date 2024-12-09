@@ -18,4 +18,8 @@ In server.py other important variables are:
 	- Note that by-default the implementation uses HTTP Basic Authentication, which is not recommended for production environment and/or the very least, an SSL/TLS connection should be set up
 - PORT = The port for listening requests. You can access this port with web browser after the server has booted up.
 
+The application will by-default reset the Sqlite database on restart, you can disable this by searching and commenting out the line self.conn.execute("DROP TABLE IF EXISTS file_statuses") in _create_table() function of StatusStorage class.
+
+If you want to modify the common prompt given for all tasks, you can find it in create_system_prompt() function in SubtitleOptimizer class.
+
 Note: by default the result page will contain svn revision number for tracking/debugging which version the subtitles were generated with. If you don't want this, find SVN_REVISION variable in server.py and comment out all occurrences.

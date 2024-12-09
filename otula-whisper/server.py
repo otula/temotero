@@ -156,7 +156,7 @@ class StatusStorage:
 
     def _create_table(self):
         with self.conn:
-            self.conn.execute("DROP TABLE IF EXISTS file_statuses")
+            self.conn.execute("DROP TABLE IF EXISTS file_statuses") # drop existing tables
             self.conn.execute("CREATE TABLE IF NOT EXISTS file_statuses (uuid TEXT PRIMARY KEY, filename TEXT, video_filepath TEXT, meta_filepath TEXT, status TEXT, srt TEXT, srt_optimized TEXT, language TEXT, timestamp_uploaded INTEGER, timestamp_generation_started INTEGER, timestamp_generation_completed INTEGER, timestamp_optimization_started INTEGER, timestamp_optimization_completed INTEGER, video_duration INTEGER)")
 
     #
