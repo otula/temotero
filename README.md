@@ -11,6 +11,8 @@ pdf-to-json-converter
 - Example implementation for PDF-to-JSON converter. Uses OpenAI/Azure APIs for the converting a PDF file into a predefined JSON format.
 - Can be used, for example, for extracting specific data from a complex PDF files.
 
+otula-whisper
+- Example implementation of a subtitle generator that uses faster-whisper implementation (https://github.com/SYSTRAN/faster-whisper) of OpenAI's Whisper language model in combination of OpenAI LLMs to optimize subtitles based on a provided video file and a reference documentation (e.g., presentation slides as a .pdf format)
 
 License
 -------
